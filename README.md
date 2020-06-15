@@ -1,2 +1,4 @@
 # drawin98
-Small pixelart test page
+A pixelart game - but it's 1998!
+
+(may add more features in the future)
