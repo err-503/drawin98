@@ -1,6 +1,7 @@
 let canvas = document.getElementById("canvas");
 ctx = canvas.getContext("2d");
 const cellSize = 10;
+let on = 0;
 
 function drawCanvas(){
     let w = document.getElementById("width").value;
@@ -47,4 +48,15 @@ function enableDraw(){
 
 function disableDraw(){
     canvas.removeEventListener("mousemove", drawPix);
+}
+
+function strtmn(){
+    if(on == 0){
+        document.getElementById("sm").style.display = "block";
+        on = 1;
+    }
+    else {
+        document.getElementById("sm").style.display = "none";
+        on = 0;
+    }
 }
