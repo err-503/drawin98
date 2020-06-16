@@ -66,6 +66,13 @@ canvas{
     background-color: #bdbdbd;
     box-shadow: inset 1px 1px 0px 0px #fff, 1px 1px 0px 0px #000;
 }
+.sm{
+    position: fixed;
+    bottom: 28px;
+    left: 0px;
+    width: 200px;
+    height: initial;
+}
 .start{
     margin: 2px 0px 2px 2px;
     background-color: #bdbdbd;
