@@ -1,6 +1,6 @@
 let canvas = document.getElementById("canvas");
 ctx = canvas.getContext("2d");
-const cellSize = 10;
+let cellSize = 50;
 let on = 0;
 
 function drawCanvas(){
@@ -50,7 +50,7 @@ function disableDraw(){
     canvas.removeEventListener("mousemove", drawPix);
 }
 
-function strtmn(){
+function opcl(){
     if(on == 0){
         document.getElementById("sm").style.display = "block";
         on = 1;
