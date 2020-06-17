@@ -26,6 +26,14 @@ body{
     z-index: 1;
     opacity: 1;
     animation: fadeOut 1s ease-out forwards;
+    font-family: sans-serif;
+    text-shadow: 0.5px 0px white, 1.5px 0px white;
+    color: transparent;
+    letter-spacing: 1.5px;
+    line-height: 98px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
 }
 
 @keyframes boot{

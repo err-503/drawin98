@@ -1,6 +1,6 @@
 let canvas = document.getElementById("canvas");
 ctx = canvas.getContext("2d");
-let cellSize = 50;
+let cellSize = 10;
 let on = 0;
 
 function drawCanvas(){
@@ -32,9 +32,9 @@ function drawCanvas(){
         document.getElementById("drawbox").style.display = "block";
         canvas.addEventListener("click", drawPix);
         canvas.addEventListener("mousedown", enableDraw);
+        return cellSize;
     }
 }
-
 function drawPix(event){
     let brushSize = document.getElementById("brsh").value;
     ctx.fillStyle = document.getElementById("color").value;
