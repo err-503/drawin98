@@ -8,19 +8,19 @@
 </head>
 <body>
 <div class="splash">
-    <img class="bootimg" src="boot.png">
+    <img class="bootimg" src="boot.png" ondragstart="return false;">
     <h1>Drawin98</h1>
 </div>
-<div class="selbox">
+<div class="selbox" id="selbox">
     <div class="winheader">
         <span class="headtext">Settings</span>
-        <input type="submit" class="x" value="X"><!-- There's probably a better way to do this -->
+        <input type="submit" class="x" value="X" onclick="document.getElementById('selbox').style.display = 'none', document.getElementById('drawbox').style.display = 'none'">
     </div>
     <div class="content"> <!-- probably unnescesary -->
         <label for="width">Width:</label><br>
-        <input type="number" id="width" min="100" step="100"><br>
+        <input type="number" id="width" min="100" step="10"><br>
         <label for="height">Height:</label><br>
-        <input type="number" id="height" min="100" step="100"><br>
+        <input type="number" id="height" min="100" step="10"><br>
         <label for="brsh">Brush size:</label><br>
         <input type="range" id="brsh" min="1" max="10" value="1"><br>
         <label for="height">Color:</label><br>
@@ -40,12 +40,20 @@
         <span class="headtext">Drawin98</span>
     </div>
     <div class="content" id="start">
-        
+        <button class="sel" onclick="document.getElementById('selbox').style.display = 'block'">
+            <img class="photo" src="plogo.png">
+            <span>Paint</span>
+        </button>
+        <hr>
+        <button class="sel">
+            <img class="photo" src="slogo.png" onclick="">
+            <span>Settings</span>
+        </button>
     </div>
 </div>
 <div class="footer">
     <button class="start" onclick="opcl()">
-        <img id="photo" src="sun.png">
+        <img class="photo" src="sun.png">
         <span>Start</span>
     </button>
 </div>
