@@ -50,7 +50,7 @@ function disableDraw(){
     canvas.removeEventListener("mousemove", drawPix);
 }
 
-function opcl(){
+function start(){
     if(on == 0){
         document.getElementById("sm").style.display = "block";
         on = 1;

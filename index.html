@@ -7,10 +7,13 @@
     <meta charset="UTF-8">
 </head>
 <body>
+<!-- splash -->
 <div class="splash">
     <img class="bootimg" src="boot.png" ondragstart="return false;">
     <h1>Drawin98</h1>
 </div>
+
+<!-- paint -->
 <div class="selbox" id="selbox">
     <div class="winheader">
         <span class="headtext">Settings</span>
@@ -35,28 +38,40 @@
     </div>
     <canvas id="canvas"></canvas>
 </div>
+
+<!-- settings -->
+<div class="settings" id="settings">
+    <div class="winheader">
+        <span class="headtext">Settings</span>
+        <input type="submit" class="x" value="X" onclick="document.getElementById('settings').style.display = 'none'">
+    </div>
+    <div class="content">test</div>
+</div>
+
+<!-- start menu -->
 <div class="sm" id="sm">
     <div class="winheader" id="style">
         <span class="headtext">Drawin98</span>
     </div>
     <div class="content" id="start">
-        <button class="sel" onclick="document.getElementById('selbox').style.display = 'block'">
-            <img class="photo" src="plogo.png">
+        <button class="sel" onclick="document.getElementById('selbox').style.display = 'block'; start()">
+            <img class="photo" src="paint.png">
             <span>Paint</span>
         </button>
         <hr>
-        <button class="sel" onclick="alert('no')">
-            <img class="photo" src="slogo.png">
+        <button class="sel" onclick="document.getElementById('settings').style.display = 'block'; start()">
+            <img class="photo" src="settings.png">
             <span>Settings</span>
         </button>
     </div>
 </div>
 <div class="footer">
-    <button class="start" onclick="opcl()">
-        <img class="photo" src="sun.png">
+    <button class="start" onclick="start()">
+        <img class="photo" src="start.png">
         <span>Start</span>
     </button>
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>

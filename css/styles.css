@@ -28,7 +28,6 @@ body{
     text-shadow: 0.5px 0px white, 1.5px 0px white;
     color: transparent;
     letter-spacing: 1.5px;
-    line-height: 98px;
     font-size: 20px;
     color: #fff;
     text-align: center;
@@ -49,6 +48,8 @@ body{
     margin: auto;
     opacity: 0;
     animation: boot 1s ease-out forwards;
+    height: 50%;
+    width: auto;
 }
 
 .winheader {
@@ -120,6 +121,16 @@ body{
     margin-bottom: 34px;
 }
 
+.settings{
+    display: none;
+    background-color: #bdbdbd;
+    box-shadow: inset 1px 1px 0px 0px #fff, 1px 1px 0px 0px #000;
+    min-width: initial;
+    min-height: initial;
+    float: left;
+    margin-bottom: 34px;
+}
+
 canvas{
     margin: 8px 8px 4px 8px;
     background-color: #fff;
@@ -180,7 +191,7 @@ canvas{
     font-size: .8rem;
     color: #000;
     text-align: left;
-    padding: 10px 2px;
+    padding: 5.5px 2px;
     margin: 0px;
     background-color: #bdbdbd; 
     border: none;
