@@ -1,6 +1,8 @@
 body{
     box-sizing: border-box;
-    background-color: #008080;
+    background-image: url(../wallpapers/wall0.png);
+    background-repeat: repeat;
+    background-size: unset;
 }
 
 @keyframes fadeOut{
@@ -118,17 +120,17 @@ body{
     min-width: initial;
     min-height: initial;
     float: left;
-    margin-bottom: 34px;
+    margin: 0px 15px 34px 0px;
 }
 
 .settings{
     display: none;
     background-color: #bdbdbd;
     box-shadow: inset 1px 1px 0px 0px #fff, 1px 1px 0px 0px #000;
-    min-width: initial;
-    min-height: initial;
+    width: 454px;
     float: left;
     margin-bottom: 34px;
+    margin: 0px 0px 34px 15px;
 }
 
 canvas{
@@ -157,6 +159,10 @@ canvas{
     display: none;
 }
 
+.sm span {
+    margin: 0px 0px 0px 5px;
+}
+
 .start{
     margin: 2px 0px 2px 2px;
     background-color: #bdbdbd;
@@ -175,14 +181,13 @@ canvas{
     width: 15px;
     height: 15px;
     float: left;
-    padding: 0px 2px 1px 2px;
+    padding: 0px 2px 1px 5px;
 }
 
 .sel {
     position: relative;
     left: 21px;
     width: 92%;
-    background-color: #4CAF50; /* Green */
     border: none;
     font-family: sans-serif;
     color: transparent;
@@ -202,7 +207,42 @@ canvas{
     color: #fff;
 }
 
-hr{
+hr {
     width: 155px;
     margin: 1px 0px 0px 27px;
+}
+
+.settsel{
+    margin: 3px 2px 5px 2px;
+    background-color: #bdbdbd;
+    padding: 5px 5px 5px 5px;
+    width: 211px;
+}
+.settsel p{
+    line-height: 15px;
+    font-size: .75rem;
+    color: #000;
+    float: left;
+    padding: 5px 5px 5px 5px;
+}
+.settsel img{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.settings#wallpapers {
+    width: 224px;
+}
+
+.settings#styles {
+    width: 200px;
+}
+
+.settings#infos {
+    width: 200px;
+}
+
+.settings#soon {
+    width: 300px;
 }

@@ -60,3 +60,17 @@ function start(){
         on = 0;
     }
 }
+
+function wallchange(id){
+    let x = id;
+    console.log(x);
+    if(x < 2){
+        document.body.style.backgroundImage = "url(./wallpapers/wall" + x + ".png)";
+        document.body.style.backgroundRepeat = "repeat";
+        document.body.style.backgroundSize = "unset";
+    } else {
+        document.body.style.backgroundImage = "url(./wallpapers/wall" + x + ".png)";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "100%";
+    }
+}

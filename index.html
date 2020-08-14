@@ -9,8 +9,8 @@
 <body>
 <!-- splash -->
 <div class="splash">
-    <img class="bootimg" src="boot.png" ondragstart="return false;">
-    <h1>Drawin98</h1>
+    <img class="bootimg" src="./assets/boot.png" ondragstart="return false;">
+    <h1>Dra(win98)</h1>
 </div>
 
 <!-- paint -->
@@ -39,35 +39,105 @@
     <canvas id="canvas"></canvas>
 </div>
 
+<!-- --- --- --- -->
 <!-- settings -->
 <div class="settings" id="settings">
     <div class="winheader">
         <span class="headtext">Settings</span>
         <input type="submit" class="x" value="X" onclick="document.getElementById('settings').style.display = 'none'">
     </div>
-    <div class="content">test</div>
+    <div class="content">
+        <button class="settsel" onclick="document.getElementById('wallpapers').style.display = 'block'">
+            <img src="./assets/wallpapers.png" ondragstart="return false">
+            <p><b>Wallpapers</b></p>
+        </button>
+        <button class="settsel" onclick="document.getElementById('styles').style.display = 'block'">
+            <img src="./assets/styles.png" ondragstart="return false">
+            <p><b>Styles</b></p>
+        </button>
+        <button class="settsel" onclick="document.getElementById('infos').style.display = 'block'">
+            <img src="./assets/info.png" ondragstart="return false">
+            <p><b>Info</b></p>
+        </button>
+        <button class="settsel" onclick="document.getElementById('soon').style.display = 'block'">
+            <img src="./assets/soontm.png" ondragstart="return false">
+            <p><b>More coming soon!</b></p>
+        </button>
+    </div>
 </div>
+
+<!-- wallpaper settings -->
+<div class="settings" id="wallpapers">
+    <div class="winheader">
+        <span class="headtext">Wallpaper</span>
+        <input type="submit" class="x" value="X" onclick="document.getElementById('wallpapers').style.display = 'none'">
+    </div>
+    <div class="content">
+        <a id="0" onclick="wallchange(this.id)"><img src="./assets/thumb0.png"></a>
+        <a id="1" onclick="wallchange(this.id)"><img src="./assets/thumb1.png"></a>
+        <a id="2" onclick="wallchange(this.id)"><img src="./assets/thumb2.png"></a>
+        <a id="3" onclick="wallchange(this.id)"><img src="./assets/thumb3.png"></a>
+    </div>
+</div>
+
+<!-- style settings -->
+<div class="settings" id="styles">
+    <div class="winheader">
+        <span class="headtext">Styles</span>
+        <input type="submit" class="x" value="X" onclick="document.getElementById('styles').style.display = 'none'">
+    </div>
+    <div class="content">
+        <p>Gonna have to figure this one out...</p>
+    </div>
+</div>
+
+<!-- info -->
+<div class="settings" id="infos">
+    <div class="winheader">
+        <span class="headtext">System info</span>
+        <input type="submit" class="x" value="X" onclick="document.getElementById('infos').style.display = 'none'">
+    </div>
+    <div class="content">
+        <p>Created by: <a href="https://github.com/err-503">err503</a></p>
+        <p>This is a small summertime project. Created for fun and personal use.</p>
+    </div>
+</div>
+
+<!-- info -->
+<div class="settings" id="soon">
+    <div class="winheader">
+        <span class="headtext">Soon(TM)</span>
+        <input type="submit" class="x" value="X" onclick="document.getElementById('soon').style.display = 'none'">
+    </div>
+    <div class="content">
+        <img src="./assets/soon.gif">
+    </div>
+</div>
+
+<!-- --- --- --- -->
 
 <!-- start menu -->
 <div class="sm" id="sm">
     <div class="winheader" id="style">
-        <span class="headtext">Drawin98</span>
+        <span class="headtext">Dra(win98)</span>
     </div>
     <div class="content" id="start">
         <button class="sel" onclick="document.getElementById('selbox').style.display = 'block'; start()">
-            <img class="photo" src="paint.png">
+            <img class="photo" src="./assets/paint.png">
             <span>Paint</span>
         </button>
         <hr>
         <button class="sel" onclick="document.getElementById('settings').style.display = 'block'; start()">
-            <img class="photo" src="settings.png">
+            <img class="photo" src="./assets/settings.png">
             <span>Settings</span>
         </button>
     </div>
 </div>
+
+<!-- taskbar -->
 <div class="footer">
     <button class="start" onclick="start()">
-        <img class="photo" src="start.png">
+        <img class="photo" src="./assets/start.png">
         <span>Start</span>
     </button>
 </div>
